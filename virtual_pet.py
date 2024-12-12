@@ -33,7 +33,7 @@ class VirtualPet:
         print(f"{self.name} - Happiness: {self.happiness}, Hunger: {self.hunger}, Health: {self.health}, Energy: {self.energy}, Age: {self.age}")
 
     def check_status(self):
-        if self.hunger >= 100:
+        if self.hunger > 100:
             print(f"{self.name} is too hungry and has passed away.")
             return False
         elif self.happiness <= 0:
@@ -68,4 +68,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
